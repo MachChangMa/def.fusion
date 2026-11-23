@@ -1,0 +1,97 @@
+/* definitly Fusion 95 — original Windows 95-inspired visual skin. */
+:root{--w95-gray:#c0c0c0;--w95-light:#fff;--w95-mid:#dfdfdf;--w95-shadow:#808080;--w95-deep:#404040;--w95-navy:#000080;--w95-teal:#008080;--w95-ink:#000;--w95-link:#000080}
+/* Preserve the intentionally unstyled 404/blocked entrance pages. */
+#arcade{background:var(--w95-teal)!important;color:var(--w95-ink)!important;font-family:Tahoma,"MS Sans Serif",Verdana,sans-serif!important;padding:34px 12px 76px!important;min-height:100vh}
+#arcade *{text-shadow:none!important}
+#arcade .panel{max-width:1160px!important;background:var(--w95-gray)!important;color:#000!important;border:2px solid!important;border-color:#fff #404040 #404040 #fff!important;box-shadow:1px 1px 0 #000, 5px 6px 0 #003f3f!important;padding:5px!important;text-align:left}
+#arcade .arcTop{min-height:76px;background:linear-gradient(90deg,var(--w95-navy) 0%,#0b439b 70%,#3878bc 100%)!important;border:0!important;color:#fff!important;padding:9px 11px!important;align-items:center!important;gap:12px!important}
+#arcade .arcTop h1{font:bold clamp(19px,2.6vw,29px) Tahoma,Verdana,sans-serif!important;color:white!important;letter-spacing:-.5px!important;margin:2px 0!important}
+#arcade .arcTop h1:before{content:'▣';display:inline-block;color:#ffcf55;margin-right:10px;font-size:23px}
+#arcade .arcTop small,#arcade .arcTop>div:last-child{color:#e3e9fa!important;font:11px Tahoma,Verdana,sans-serif!important}
+#arcade .arcTabs{background:var(--w95-gray);padding:7px 7px 2px;margin:0!important;gap:4px!important;border-bottom:1px solid #808080}
+#arcade button,.studio button,#arcade .arcTabs button{font:12px Tahoma,"MS Sans Serif",Verdana,sans-serif!important;background:var(--w95-gray)!important;color:#000!important;border:2px solid!important;border-color:#fff #404040 #404040 #fff!important;border-radius:0!important;box-shadow:none!important;padding:7px 11px!important;cursor:pointer}
+#arcade button:active,.studio button:active,#arcade .arcTabs button.active{border-color:#404040 #fff #fff #404040!important;background:#b6b6b6!important;box-shadow:inset 1px 1px 0 #808080!important}
+#arcade button:hover,.studio button:hover{filter:none!important}
+#arcade button:focus-visible,#arcade input:focus-visible,#arcade select:focus-visible,#arcade textarea:focus-visible{outline:1px dotted #000!important;outline-offset:-4px}
+#arcade button:disabled{opacity:.55}
+#arcade .arcTabs button{font-weight:bold!important;padding:9px 12px!important}
+#arcade #siteAvailability{margin:7px!important;padding:8px!important;background:#dfdfdf!important;border:2px inset!important;border-color:#808080 #fff #fff #808080!important;color:#000!important}
+#arcade #siteAvailability span{color:#000!important;font:12px Tahoma,Verdana,sans-serif}
+#arcade #gameArea{padding:12px 13px 18px!important;background:#c0c0c0}
+#arcade #arcCount{color:#242424!important;font:12px Tahoma,Verdana,sans-serif}
+#arcade .arcSearch{width:100%!important;background:#fff!important;color:#111!important;border:2px inset!important;border-color:#808080 #fff #fff #808080!important;border-radius:0!important;padding:9px!important;font:14px Tahoma,Verdana,sans-serif!important;box-shadow:none!important}
+#arcade .gameGrid{gap:13px!important}
+#arcade .gameCard{background:#dfdfdf!important;color:#000!important;padding:6px!important;border:2px solid!important;border-color:#fff #404040 #404040 #fff!important;border-radius:0!important;box-shadow:1px 1px #888!important}
+#arcade .gameArt{background:repeating-linear-gradient(0deg,#154a73,#154a73 12px,#205e8e 12px,#205e8e 24px)!important;height:126px!important;border:2px inset!important;border-color:#404040 #fff #fff #404040!important;font-size:52px!important}
+#arcade .gameCard h3{background:linear-gradient(90deg,#000080,#3567a8);color:#fff!important;font:bold 14px Tahoma,Verdana,sans-serif!important;margin:6px 0!important;padding:6px 7px!important}
+#arcade .gameCard small,#arcade .gameCard p,#arcade .gameBadge,#arcade .studioNote{color:#242424!important}
+#arcade .gameCard small{font:11px Tahoma,Verdana,sans-serif!important}
+#arcade .gameCard p{font:12px/1.5 Tahoma,Verdana,sans-serif!important;margin:9px 4px!important}
+#arcade .gameBadge{border:1px solid #808080!important;background:#c0c0c0!important;color:#111!important}
+#arcade #studio,#arcade .quickImporter,#arcade .backendImporter,#arcade #gameControlCenter,#arcade .newsStage,#arcade .newsTools,#arcade .controlRow{background:var(--w95-gray)!important;color:#000!important;border:2px solid!important;border-color:#fff #404040 #404040 #fff!important;border-radius:0!important;box-shadow:none!important}
+#arcade #studio{margin:9px!important;padding:10px!important}
+#arcade #studio h2,#arcade #studio h3,#arcade .quickImporter h3,#arcade .backendImporter h3,#arcade #gameControlCenter h3{background:linear-gradient(90deg,#000080,#3168b5)!important;color:#fff!important;padding:7px 9px!important;font:bold 14px Tahoma,Verdana,sans-serif!important;margin:0 0 11px!important}
+#arcade .quickImporter{margin:10px 0!important;padding:8px!important}
+#arcade .quickImporter .importResults{background:#fff!important;color:#000!important;border:2px inset!important;border-color:#808080 #fff #fff #808080!important}
+#arcade #studioForm label,#arcade .backendImporter label,#arcade .quickImporter label,#arcade .controlRow label,#arcade .newsTools label{color:#111!important}
+#arcade #studio input:not([type=checkbox]),#arcade #studio select,#arcade #studio textarea,#arcade .newsTools input,#arcade .quickImporter textarea,#arcade .backendImporter input{background:#fff!important;color:#000!important;border:2px inset!important;border-color:#808080 #fff #fff #808080!important;border-radius:0!important;padding:7px!important;font:13px Tahoma,Verdana,sans-serif!important}
+#arcade .gcCount,#arcade .gameBadge{background:#dfdfdf!important;color:#111!important}
+#arcade .rowTitle,#arcade .rowMeta,#arcade .gcHead,#arcade .backendBadge,#arcade #backendStatus,#arcade #backendOutput,#arcade #studioStatus{color:#111!important}
+#arcade .controlRow select{background:#fff!important;color:#000!important}
+#arcade .gameCard.offline{opacity:.7}
+#arcade .newsStage{padding:8px!important;max-width:850px!important}
+#arcade .newsStage h2{background:linear-gradient(90deg,#000080,#3468ac)!important;color:#fff!important;padding:8px!important;font:bold 17px Tahoma,Verdana,sans-serif!important;margin:0 0 10px!important}
+#arcade #newsArea{background:#c0c0c0;padding:10px}
+#arcade #newsHeadline{color:#111!important;font:14px Tahoma,Verdana,sans-serif!important;padding:8px}
+#arcade #changeSection,#arcade #communityNews{background:#f5f5f5!important;color:#111!important;border:2px inset!important;border-color:#808080 #fff #fff #808080!important;border-radius:0!important}
+#arcade #changeSection *,#arcade #communityNews *{color:#111!important}
+#arcade #changeSection h2{color:#000080!important}
+#arcade .newsTools{padding:10px!important}
+#arcade .newsTools .studioNote,#arcade .importHint{color:#333!important}
+#arcade #devBadge{color:#ffe386!important}
+/* Native-looking application player. */
+#gamePlayer{background:rgba(0,0,0,.67)!important}
+#gamePlayer .playerFrame{background:#c0c0c0!important;color:#000!important;border:3px solid!important;border-color:#fff #404040 #404040 #fff!important;border-radius:0!important;box-shadow:4px 5px 0 #0009!important;padding:5px!important}
+#gamePlayer .playerFrame header{background:linear-gradient(90deg,#000080,#3977ba)!important;color:#fff!important;padding:7px!important;margin:0 0 5px!important}
+#gamePlayer .playerFrame button{background:#c0c0c0!important;color:#000!important;border:2px solid!important;border-color:#fff #404040 #404040 #fff!important;border-radius:0!important;padding:6px 10px!important}
+#gamePlayer .playerFrame iframe{background:#fff!important;border:2px inset!important;border-color:#808080 #fff #fff #808080!important}
+#gamePlayer .playerMessage,#gamePlayer .playerRecovery,#gamePlayer .playerRecovery .note{color:#111!important;background:#dfdfdf!important}
+/* Pop-up command prompt: classic Win95 chrome, DOS console contents. */
+#console{border:3px solid!important;border-color:#fff #404040 #404040 #fff!important;background:#000!important;box-shadow:5px 6px 0 #0009!important;color:#c8c8c8!important;border-radius:0!important;font:14px "Lucida Console","Courier New",monospace!important}
+#consoleHeader{background:linear-gradient(90deg,#000080,#407cba)!important;color:#fff!important;font:bold 13px Tahoma,Verdana,sans-serif!important}
+#consoleHeader button{background:#c0c0c0!important;border:2px solid!important;border-color:#fff #404040 #404040 #fff!important;border-radius:0!important;color:#000!important}
+#consoleOutput{color:#d4d4d4!important}
+#consoleForm{background:#000!important;color:#c8c8c8!important;border-top:1px solid #808080!important}
+#consoleInput{color:#fff!important;background:#000!important}
+/* Status-bar style at bottom, solely a decorative visual. */
+#arcade .panel:after{content:'▣  definitly Fusion 95   |   Ready';display:block;margin:2px 1px 0;padding:5px 8px;color:#333;background:#c0c0c0;border:2px inset;border-color:#808080 #fff #fff #808080;font:11px Tahoma,Verdana,sans-serif}
+@media(max-width:760px){#arcade{padding:8px 5px 30px!important}#arcade .arcTop{min-height:70px}#arcade .arcTabs button{font-size:11px!important;padding:7px 8px!important}#arcade .gameGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:480px){#arcade .gameGrid{grid-template-columns:1fr!important}#arcade .arcTop{gap:6px!important}#arcade .gameArt{height:110px!important}#arcade #gameArea{padding:8px!important}}
+
+#sourceDetail, #sourceImport { border: 2px inset; padding: 12px; margin: 12px 0; }
+#sourceDetail code { display: block; overflow-wrap: anywhere; margin-top: 4px; }
+#sourceList { list-style: none; display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,230px),1fr)); gap: 6px; padding: 0; }
+#sourceList button { width: 100%; text-align: left; }
+#sourcePlayer iframe { display: block; width: 100%; height: min(60vh,540px); border: 2px inset; }
+#sourceImport label { display: block; margin: 8px 0; }
+#sourceImport input:not([type=checkbox]) { display: block; width: min(100%,42rem); }
+#atomLab { max-width: 880px; margin: clamp(12px,5vh,48px) auto; padding: 4px 14px 16px; background: #c0c0c0; color: #111; border: 3px outset #eee; font: 1rem/1.45 Verdana, sans-serif; }
+#atomLab[hidden], #atomEasterEgg[hidden] { display: none; }
+.atomTitle { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; background: #000080; color: white; padding: 7px 9px; margin: 0 -10px; }
+.atomTitle h1 { font: bold 1.35rem Verdana,sans-serif; margin: 0; }
+.atomWorkspace { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(0,1fr); gap: 18px; align-items: start; }
+.atomView { background: #111e38; color: #f2f5fb; border: 2px inset #ddd; text-align: center; padding: 8px; }
+.atomView h2 { margin: 3px 0; font-size: 1.15rem; }
+.atomView output { margin-left: 8px; }
+.atomView canvas { width: 100%; max-width: 360px; height: auto; display: block; margin: auto; }
+.atomView p { margin: 3px 0; font-size: .9rem; }
+#atomLab button, #atomEasterEgg button, #atomLab select { font: inherit; color: #111; background: #c0c0c0; padding: 4px 8px; border: 2px outset #e6e6e6; }
+#atomLab button, #atomEasterEgg button { cursor: pointer; }
+#atomLab select { background: #fff; border-style: inset; width: 100%; margin: 2px 0 8px; }
+#atomBuild { margin: 0; }
+#atomBonds { padding: 0; list-style: none; }
+#atomBonds li, #atomEasterEgg { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+#atomBonds li { justify-content: space-between; margin-bottom: 4px; }
+.atomActions { display: flex; gap: 6px; flex-wrap: wrap; }
+#atomEasterEgg { margin: 12px; padding: 8px; background: #c0c0c0; color: #111; border: 2px outset #eee; }
+@media (max-width:660px) { #atomLab { margin: 10px; } .atomWorkspace { grid-template-columns: 1fr; } }
