@@ -174,7 +174,6 @@
   </div>
  </div>
 </main>
-<aside id="atomEasterEgg" hidden aria-label="Atom Lab Easter egg"><strong>Atom Lab found water · Retro 404 Easter egg</strong><button type="button" id="atomBack">Back to Atom Lab</button><button type="button" id="atomEggArcade">Open Fusion Arcade</button></aside>
 <section id="error" hidden aria-label="Not found page"><h1>Not Found</h1><p>The requested URL was not found on this server.</p><hr><address>Apache Server</address></section>
 
 <section id="gnomePage" aria-label="Access information">
@@ -287,19 +286,16 @@ let currentPage='error',previousFocus=null,history=[],historyIndex=0;
 let failures=0,challenge=null,rebooting=false;
 try{failures=Number(sessionStorage.getItem(FAIL_KEY)||0);challenge=JSON.parse(sessionStorage.getItem(CHALLENGE_KEY)||'null')}catch{}
 const atomLab = document.getElementById('atomLab');
-const atomEgg = document.getElementById('atomEasterEgg');
 let atomReward = false;
 function show(page){
  if(page!=='error')atomReward=false;
  atomLab.hidden=page!=='atoms';
- atomEgg.hidden=page!=='error'||!atomReward;
  currentPage=page;
  if(page!=='arcade')FusionSources.stop();
  error.hidden=page!=='error'||gnomeMode&&!atomReward;gnomePage.classList.toggle('active',page==='error'&&gnomeMode&&!atomReward);gate.classList.toggle('active',page==='gate');arcade.style.display=page==='arcade'?'block':'none';document.getElementById('worldle').classList.toggle('active',page==='worldle');
  error.classList.toggle('locked',killed);
  document.title=page==='atoms'?'Atom Lab | definitly Fusion':page==='error'?(gnomeMode?"Looks like this page isn't allowed":'404 Not Found'):'definitly Fusion';
  if(page==='arcade'){renderGames();applyDevMode()}
- if(page==='error'&&atomReward)document.getElementById('atomBack').focus();
  if(page==='gate'&&!terminal.classList.contains('open'))pass.focus();
  if(page==='worldle'&&!terminal.classList.contains('open'))document.getElementById('countryInput').focus();
 }
@@ -904,11 +900,6 @@ function openArcadeFromLab(){
  show('gate');
 }
 document.getElementById('atomArcade').onclick=openArcadeFromLab;
-document.getElementById('atomEggArcade').onclick=openArcadeFromLab;
-document.getElementById('atomBack').onclick=()=>{
- show('atoms');
- document.getElementById('atomCheck').focus();
-};
 atomLab.addEventListener('water-built',()=>{
  atomReward=true;
  show('error');
