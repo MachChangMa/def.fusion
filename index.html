@@ -153,7 +153,7 @@
 </head>
 <body>
 <main id="atomLab" aria-labelledby="atomHeading">
- <header class="atomTitle"><h1 id="atomHeading">Atom Lab</h1><button type="button" id="atomArcade">Open Fusion Arcade</button></header>
+ <header class="atomTitle"><h1 id="atomHeading">Atom Lab</h1></header>
  <p>Build a molecule from hydrogen, carbon, nitrogen, and oxygen. A single, double, or triple bond represents one, two, or three shared pairs of electrons.</p>
  <div class="atomWorkspace">
   <div class="atomView">
@@ -895,11 +895,6 @@ document.addEventListener('visibilitychange',()=>{
 });
 window.addEventListener('pageshow',checkAwayTimeout);
 if(hiddenAt!==null&&!document.hidden)checkAwayTimeout();
-function openArcadeFromLab(){
- if(killed){show('error');return;}
- show('gate');
-}
-document.getElementById('atomArcade').onclick=openArcadeFromLab;
 atomLab.addEventListener('water-built',()=>{
  atomReward=true;
  show('error');
